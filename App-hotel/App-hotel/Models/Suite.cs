@@ -18,5 +18,10 @@ namespace App_hotel.Models
             Capacidade = capacidade;
             ValorDiaria = valorDiaria;
         }
+
+        public override string ToString()
+        {
+            return $"Tipo: {TipoSuite}, Capacidade: {Capacidade}, Valor Diária: R$ {ValorDiaria}";
+        }
     }
 }
